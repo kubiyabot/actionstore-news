@@ -61,7 +61,7 @@ You should see the following output:
 ## Using bundled actions inside workflows
 Given example workflow step:
 ```
-- id: get_the_news
+- id: news_sources
     	type: action
 	action:
 	  store: get_the_news
