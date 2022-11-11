@@ -62,11 +62,11 @@ You should see the following output:
 Given example workflow step:
 ```
 - id: get_the_news
-	type: action
+    	type: action
 	action:
-		store: get_the_news
-		name: get_all_sources
-		parameters: {}
+	  store: get_the_news
+	  name: get_all_sources
+	  parameters: {}
 ```
 This step will store a variable called `news_sources` to the workflow variables context, this step output can now be used as part of other steps to show prompts, etc
 
@@ -75,9 +75,9 @@ Full example:
 - id: news_sources
 	type: action
 	action:
-		store: get_the_news
-		name: get_all_sources
-		parameters: {}
+	  store: get_the_news
+	  name: get_all_sources
+	  parameters: {}
   - id: multi
     type: multi_input
     prompt: "Need some help here"
